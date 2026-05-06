@@ -2,8 +2,7 @@
 
 ## Quick Start
 1. Open `index.html` in Chrome
-2. Press F12 to open DevTools
-3. Check Console tab for all logging examples
+2. Check Console tab for all logging examples
 
 ## DevTools Features Included
 
@@ -46,19 +45,6 @@ if (pet_info.energy > 100) {
 }
 ```
 
-## Screenshot Checklist
-- [ ] Log messages (info, warning, error, table, group, custom)
-- [ ] 404 in Console and Network tab
-- [ ] TypeError with stack trace
-- [ ] Violation warning
-- [ ] Filtering examples (by level, text, regex, source)
-- [ ] Sources UI with breakpoint
-- [ ] Scope pane with pet_info expanded
-- [ ] Watch expressions
-- [ ] Console variable inspection
-- [ ] Bug: energy > 100%
-- [ ] Fix applied
-
 ## File Structure
 ```
 project-2-devtools/
@@ -66,5 +52,5 @@ project-2-devtools/
 ├── script.js
 ├── style.css
 ├── README.md
-└── screenshots/ (create this folder for your screenshots)
+
 ```
