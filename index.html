@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Giga Pet - Chrome DevTools Demo</title>
+    <meta name="description" content="Virtual Pet with Chrome DevTools Examples">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Intentional 404 for DevTools demonstration -->
+    <script src="nonexistent-file.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Your Giga Pet</h1>
+      <p class="subtitle">Chrome DevTools Demonstration Project</p>
+    </header>
+
+    <main>
+      <section class="pet-image-container">
+        <img class="pet-image" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400" alt="Cute dog">
+      </section>
+      
+      <section class="dashboard">
+        <h2>Pet Stats</h2>
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+        <div>Energy: <strong><span class="energy"></span>%</strong></div>
+        
+        <div class="pet-message"></div>
+        
+        <div class="button-container">
+          <button class="treat-button">
+            🦴 Treat
+          </button>
+          <button class="play-button">
+            🎾 Play
+          </button>
+          <button class="exercise-button">
+            🏃 Exercise
+          </button>
+          <button class="sleep-button">
+            😴 Sleep
+          </button>
+        </div>
+        
+        <div class="debug-controls">
+          <h3>Debug Controls</h3>
+          <button class="trigger-error">Trigger TypeError</button>
+          <button class="trigger-violation">Trigger Violation</button>
+          <button class="show-table">Show Stats Table</button>
+          <button class="reset-pet">Reset Pet</button>
+        </div>
+      </section>
+      
+      <section class="devtools-info">
+        <h2>DevTools Features Demonstrated</h2>
+        <ul>
+          <li>✅ Console logging (info, warn, error, table, group)</li>
+          <li>✅ Custom formatted messages</li>
+          <li>✅ 404 Network error (nonexistent-file.js)</li>
+          <li>✅ TypeError demonstration</li>
+          <li>✅ Violation warnings</li>
+          <li>✅ Breakpoint debugging</li>
+          <li>✅ Variable inspection</li>
+          <li>✅ Watch expressions</li>
+        </ul>
+      </section>
+    </main>
+    
+    <footer>
+      <p>COMP484 - Chrome DevTools Project | Open DevTools (F12) to see demonstrations</p>
+    </footer>
+  </body>
+</html>

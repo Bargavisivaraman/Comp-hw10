@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin: 10px 0 0 0;
+    opacity: 0.9;
+}
+
+h2 {
+    margin-top: 0;
+    color: #667eea;
+    font-size: 1.5em;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #764ba2;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p {
+    max-width: 600px;
+}
+
+.pet-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 5px solid white;
+}
+
+.dashboard {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.dashboard div {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.pet-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.button-container button {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.treat-button {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.play-button {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.exercise-button {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.sleep-button {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.button-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.button-container button:active {
+    transform: translateY(0);
+}
+
+/* Debug Controls Styling */
+.debug-controls {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px dashed #ddd;
+}
+
+.debug-controls button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background: linear-gradient(135deg, #FF6B6B 0%, #C44569 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.debug-controls button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.debug-controls button:active {
+    transform: translateY(0);
+}
+
+.debug-controls .reset-pet {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Pet message notifications */
+.pet-message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+    border: 3px solid #fdcb6e;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d3436;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+strong {
+    color: #667eea;
+    font-size: 1.1em;
+}
+
+/* DevTools Info Section */
+.devtools-info {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-width: 500px;
+}
+
+.devtools-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.devtools-info li {
+    padding: 10px;
+    margin: 8px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.devtools-info li:hover {
+    transform: translateX(5px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dashboard,
+    .devtools-info {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
