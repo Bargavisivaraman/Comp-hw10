@@ -1,8 +1,6 @@
 # Giga Pet - Chrome DevTools Demo
 
-## Quick Start
-1. Open `index.html` in Chrome
-2. Check Console tab for all logging examples
+Live site: https://bargavisivaraman.github.io/Comp-hw10/
 
 ## DevTools Features Included
 
